@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FocusFlow | Productivity Dashboard</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <h1>FocusFlow</h1>
+
+        <div class="header-right">
+
+            <p id="currentDate"></p>
+
+            <p id="currentTime"></p>
+
+            <button id="themeBtn">
+                Toggle Theme
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= DASHBOARD LAYOUT ================= -->
+
+    <div class="dashboard">
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <h2>My Workspace</h2>
+
+            <nav>
+
+                <button class="nav-btn active" data-section="home">
+                    🏠 Home
+                </button>
+
+                <button class="nav-btn" data-section="todo">
+                    📝 Todo List
+                </button>
+
+                <button class="nav-btn" data-section="planner">
+                    📅 Daily Planner
+                </button>
+
+                <button class="nav-btn" data-section="goals">
+                    🎯 Daily Goals
+                </button>
+
+                <button class="nav-btn" data-section="pomodoro">
+                    ⏱️ Pomodoro
+                </button>
+
+                <button class="nav-btn" data-section="quotes">
+                    ✨ Motivation
+                </button>
+
+                <button class="nav-btn" data-section="weather">
+                    🌤️ Weather
+                </button>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="main-content">
+
+
+            <!-- ================= HOME SECTION ================= -->
+
+            <section id="home" class="feature-section active">
+
+                <h2>Welcome Back! 👋</h2>
+
+                <p>Let's make today productive.</p>
+
+
+                <!-- FEATURE CARDS -->
+
+                <div class="feature-grid">
+
+
+                    <div class="feature-card" data-section="todo">
+
+                        <h3>📝 Todo List</h3>
+
+                        <p>Manage your daily tasks.</p>
+
+                    </div>
+
+
+                    <div class="feature-card" data-section="planner">
+
+                        <h3>📅 Daily Planner</h3>
+
+                        <p>Plan and organize your day.</p>
+
+                    </div>
+
+
+                    <div class="feature-card" data-section="goals">
+
+                        <h3>🎯 Daily Goals</h3>
+
+                        <p>Track your daily progress.</p>
+
+                    </div>
+
+
+                    <div class="feature-card" data-section="pomodoro">
+
+                        <h3>⏱️ Pomodoro Timer</h3>
+
+                        <p>Stay focused and productive.</p>
+
+                    </div>
+
+
+                    <div class="feature-card" data-section="quotes">
+
+                        <h3>✨ Motivation</h3>
+
+                        <p>Get inspired every day.</p>
+
+                    </div>
+
+
+                    <div class="feature-card" data-section="weather">
+
+                        <h3>🌤️ Weather</h3>
+
+                        <p>Check current weather conditions.</p>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= TODO SECTION ================= -->
+
+            <section id="todo" class="feature-section">
+
+                <button class="back-btn">
+                    ← Back to Dashboard
+                </button>
+
+                <h2>📝 Todo List</h2>
+
+                <p>Manage your daily tasks here.</p>
+
+            </section>
+
+
+
+            <!-- ================= PLANNER SECTION ================= -->
+
+            <section id="planner" class="feature-section">
+
+                <button class="back-btn">
+                    ← Back to Dashboard
+                </button>
+
+                <h2>📅 Daily Planner</h2>
+
+                <p>Organize your daily schedule.</p>
+
+            </section>
+
+
+
+            <!-- ================= GOALS SECTION ================= -->
+
+            <section id="goals" class="feature-section">
+
+                <button class="back-btn">
+                    ← Back to Dashboard
+                </button>
+
+                <h2>🎯 Daily Goals</h2>
+
+                <p>Track your daily achievements.</p>
+
+            </section>
+
+
+
+            <!-- ================= POMODORO SECTION ================= -->
+
+            <section id="pomodoro" class="feature-section">
+
+                <button class="back-btn">
+                    ← Back to Dashboard
+                </button>
+
+                <h2>⏱️ Pomodoro Timer</h2>
+
+                <p>Stay focused and manage your time.</p>
+
+            </section>
+
+
+
+            <!-- ================= MOTIVATION SECTION ================= -->
+
+            <section id="quotes" class="feature-section">
+
+                <button class="back-btn">
+                    ← Back to Dashboard
+                </button>
+
+                <h2>✨ Motivation</h2>
+
+                <p>Get inspired every day.</p>
+
+            </section>
+
+
+
+            <!-- ================= WEATHER SECTION ================= -->
+
+            <section id="weather" class="feature-section">
+
+                <button class="back-btn">
+                    ← Back to Dashboard
+                </button>
+
+                <h2>🌤️ Weather</h2>
+
+                <p>Check current weather conditions.</p>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+   
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
